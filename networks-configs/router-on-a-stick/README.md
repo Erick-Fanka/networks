@@ -1,5 +1,3 @@
----
-
 ## 🏗️ Topologia da Rede
 
 ```
