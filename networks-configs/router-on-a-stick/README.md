@@ -2,7 +2,7 @@
 
 ## 🏗️ Topologia da Rede
 
-```text
+
   [PC 1, 2, 3]                                [PC 4, 5, 6]
  VLAN 10, 20, 30                             VLAN 10, 20, 30
        |                                           |
@@ -18,7 +18,7 @@
                             |
                        [Roteador] (Gig0/0)
                    (Router-on-a-Stick)
-```
+
 
 ### Estrutura Lógica
 
