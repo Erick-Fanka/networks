@@ -1,10 +1,6 @@
----
-
 ## 🏗️ Topologia da Rede
 
-Abaixo está a representação lógica da topologia configurada:
-
-```text
+```
   [PC 1, 2, 3]                                [PC 4, 5, 6]
  VLAN 10, 20, 30                             VLAN 10, 20, 30
        |                                           |
