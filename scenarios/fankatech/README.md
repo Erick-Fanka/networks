@@ -1,7 +1,7 @@
 # Cenário de Rede — FankaTech (Infraestrutura Corporativa)
 
 ## 1) Contexto
-A FankaTech é uma empresa em expansão que precisa de uma infraestrutura de rede robusta, segmentada e segura. O objetivo deste laboratório foi projetar uma topologia hierárquica usando um Core L3 para roteamento Inter-VLAN, serviços centralizados em uma DMZ (Server Farm) e integração com a internet utilizando NAT e roteamento dinâmico.
+A FankaTech é uma empresa em expansão que precisa de uma infraestrutura de rede robusta, segmentada e segura. O objetivo deste laboratório foi projetar uma topologia hierárquica usando um Core L3 para roteamento Inter-VLAN e integração com a internet utilizando NAT e roteamento dinâmico.
 
 - Departamentos corporativos (Diretoria, TI, Financeiro, Suporte) possuem segmentação lógica via VLANs e recebem IPs via DHCP Relay.
 - A rede de Visitantes (VLAN 50) adota o modelo **Zero Trust**, tendo acesso restrito: conseguem acessar serviços web públicos e a internet, mas são totalmente bloqueados de alcançar a rede interna da corporação.
@@ -14,7 +14,7 @@ A FankaTech é uma empresa em expansão que precisa de uma infraestrutura de red
   - SW1 — Conecta Diretoria e TI.
   - SW2 — Conecta Financeiro e Suporte.
   - SW3 — Conecta Visitantes.
-- 3 Servidores Dedicados (VLAN 60 - DMZ):
+- 3 Servidores Dedicados (VLAN 60):
   - SRV-DHCP (Distribui IPs para toda a rede).
   - SRV-DNS (Resolve nomes internos/externos).
   - SRV-WEB (Hospeda o site corporativo).
